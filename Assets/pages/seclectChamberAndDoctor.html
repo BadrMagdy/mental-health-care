@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book MY Doc</title>
+    <link rel="icon" href="../images/Logo.png">
+    <!--Css Files-->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!--Bootstrap-->
+    <!--GooGle Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;700&family=Inter:wght@400;900&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="logo-details">
+            <img src="../images/Logo.png" alt="" class="logo-of-nav">
+            <img src="../images/icons/list-solid.svg" alt="" class="btn-list" onclick="showNav(event)">
+        </div>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="" class="active">
+                            <img src="../images/icons/home.svg" alt="" class="icon ">
+                            <span class="text nav-text ">home</span>
+                        </a>
+                        <span class="toolti">home</span>
+                    </li>
+                    <li class="nav-link">
+                        <a href="">
+                            <img src="../images/icons/dashboard.svg" alt="" class="icon">
+                            <span class="text nav-text">dashboard</span>
+                        </a>
+                        <span class="toolti">dashboard</span>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="">
+                            <img src="../images/icons/about-us.svg" alt="" class="icon">
+                            <span class="text nav-text">about us</span>
+                        </a>
+                        <span class="toolti">about us</span>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="">
+                            <img src="../images/icons/contact.svg" alt="" class="icon">
+                            <span class="text nav-text">contact</span>
+                        </a>
+                        <span class="toolti">contact</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="adva-links">
+                <li class="nav-link">
+                    <a href="">
+                        <img src="../images/icons/setting.svg" alt="" class="icon">
+                        <span class="text nav-text">setting</span>
+                    </a>
+                    <span class="toolti">setting</span>
+                </li>
+
+                <li class="nav-link" onclick="logoutOfUserHome(event)">
+                    <a href="">
+                        <img src="../images/icons/logout.png" alt="" class="icon">
+                        <span class="text nav-text">logout</span>
+                    </a>
+                    <span class="toolti">logout</span>
+                </li>
+                <li class="nav-link end-linlk">
+                    <a href="">
+                        <img src="../images/icons/see-developer.svg" alt="" class="icon">
+                        <span class="text nav-text">see developer</span>
+                    </a>
+                    <span class="toolti">see developer</span>
+                </li>
+            </div>
+
+        </div>
+    </nav>
+    <section class="home-section">
+        <div class="header">
+            <div class="container">
+                <div class="contain-of-parts">
+                    <div class="part-1">
+                        <h1>home</h1>
+                        <div class="search">
+                            <input type="search" placeholder="Search">
+                            <img src="../images/icons/search.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="part-2">
+                        <div class="team-name">
+                            <h1>Name Team</h1>
+                            <p>example@gmail.com</p>
+                        </div>
+                        <div class="date">
+                            <h6>Thrusday</h6>
+
+                            <h4>12.12.2023</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="select-btn">
+                        <span>filter</span>
+                        <img src="../images/icons/arrowDown.svg" alt="" class="arrowDown">
+                    </div>
+                    <div class="content">
+                        <div class="search-2">
+                            <img src="../images/icons/search.svg" alt="">
+                            <input type="search" placeholder="Search">
+                        </div>
+                        <ul class="options"></ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="deteils">
+            <div class="select-Doctors">
+                <div class="container contain-of-selectDoctors">
+                    <div class="city">
+                        <h1 c>Avaialable Chambers</h1>
+                        <ul class="city-link">
+                            <li>
+                                <a href="">Helwan </a>
+                            </li>
+                            <li>
+                                <a href="">Maddi </a>
+                            </li>
+                            <li>
+                                <a href="">New Cairo </a>
+                            </li>
+                            <li>
+                                <a href="">Naser City </a>
+                            </li>
+                            <li>
+                                <a href=""> 15 May </a>
+                            </li>
+                            <li>
+                                <a href="">Helwan </a>
+                            </li>
+                            <li>
+                                <a href="">Maddi </a>
+                            </li>
+                            <li>
+                                <a href="">New Cairo </a>
+                            </li>
+                            <li>
+                                <a href="">Naser City </a>
+                            </li>
+                            <li>
+                                <a href=""> 15 May </a>
+                            </li>
+                            <li>
+                                <a href="">Maddi </a>
+                            </li>
+                            <li>
+                                <a href="">New Cairo </a>
+                            </li>
+                            <li>
+                                <a href="">Naser City </a>
+                            </li>
+                            <li>
+                                <a href=""> 15 May </a>
+                            </li>
+                            <li>
+                                <a href="">Maddi </a>
+                            </li>
+                            <li>
+                                <a href="">New Cairo </a>
+                            </li>
+                            <li>
+                                <a href="">Naser City </a>
+                            </li>
+                            <li>
+                                <a href=""> 15 May </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info_doctors">
+                        <h6 class="title">total doctors: 33</h6>
+                        <div class="cards row">
+                            <div class="card-1 col-lg-5 col-sm-10">
+                                <div class="profile-photo">
+                                    <img src="../images/pexels-pavel-danilyuk-6712704.jpg" alt="">
+                                </div>
+                                <div class="details-of-doctor">
+                                    <h4>Dr.Badr Magdy</h4>
+                                    <h6>phone: +20 515151411</h6>
+                                    <h6>id:54545465</h6>
+                                </div>
+                                <div class="btn-details">
+                                    <a href="">
+                                        <span>details</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-2 col-lg-5 col-sm-10">
+                                <div class="profile-photo">
+                                    <img src="../images/pexels-pavel-danilyuk-6712704.jpg" alt="">
+                                </div>
+                                <div class="details-of-doctor">
+                                    <h4>Dr.Badr Magdy</h4>
+                                    <h6>phone: +20 515151411</h6>
+                                    <h6>id:54545465</h6>
+                                </div>
+                                <div class="btn-details">
+                                    <a href="">
+                                        <span>details</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-3 col-lg-5 col-sm-10">
+                                <div class="profile-photo">
+                                    <img src="../images/pexels-pavel-danilyuk-6712704.jpg" alt="">
+                                </div>
+                                <div class="details-of-doctor">
+                                    <h4>Dr.Badr Magdy</h4>
+                                    <h6>phone: +20 515151411</h6>
+                                    <h6>id:54545465</h6>
+                                </div>
+                                <div class="btn-details">
+                                    <a href="">
+                                        <span>details</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="card-4 col-lg-5 col-sm-10 ">
+                                <div class="profile-photo">
+                                    <img src="../images/pexels-pavel-danilyuk-6712704.jpg" alt="">
+                                </div>
+                                <div class="details-of-doctor">
+                                    <h4>Dr.Badr Magdy</h4>
+                                    <h6>phone: +20 515151411</h6>
+                                    <h6>id:54545465</h6>
+                                </div>
+                                <div class="btn-details">
+                                    <a href="">
+                                        <span>details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lable">
+                            <ul class="paginations">
+                                <li class="item">
+                                    <a href=""><span>Next</span></a>
+                                </li>
+                                <li class="item">
+                                    <a href=""><span>1</span></a>
+                                </li>
+                                <li class="item">
+                                    <a href=""><span>2</span></a>
+                                </li>
+                                <li class="item">
+                                    <a href=""><span>3</span></a>
+                                </li>
+                                <li class="item">
+                                    <a href=""><span>4</span></a>
+                                </li>
+                                <li class="item">
+                                    <a href=""><span>5</span></a>
+                                </li>
+                                <li class="item mobile-item">
+                                    <a href=""><span>6</span></a>
+                                </li>
+                                <li class="item mobile-item">
+                                    <a href=""><span>7</span></a>
+                                </li>
+                                <li class="item mobile-item">
+                                    <a href=""><span>8</span></a>
+                                </li>
+                                <li class="item mobile-item">
+                                    <a href=""><span>9</span></a>
+                                </li>
+                                <li class="item ">
+                                    <a href=""><span>Prev</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <script src="../js/filter.js"></script>
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>

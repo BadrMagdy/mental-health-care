@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;700&family=Inter:wght@400;900&family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*colors*/
+    --primary-text: #262626;
+    --secondary-text: #595959;
+    --disabled-text: #8C8C8C;
+    --outline: #D9D9D9;
+    --active: #722ED1;
+    --error: #F5222D;
+    --warning: #FAAD14;
+    --success: #52C41A;
+    /*Colors Palette*/
+    --purple-900: #22075E;
+    --purple-600: #722ED1;
+    --purple-500: #9F00FF;
+    --purple-300: #D3ADF7;
+    --purple-100: #F9F0FF;
+    --blue-900: #003A8C;
+    --blue-600: #1890FF;
+    --blue-300: #91D5FF;
+    --blue-100: #E6F7FF;
+    --main-background: #0A062C;
+    /*fonts*/
+    --font-cabin: 'Cabin Condensed', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--main-background) !important;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--purple-300);
+    border-radius: 25px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-background);
+    border-radius: 25px;
+}
+
+@media (max-width:992px) {
+    .right-side .logo {
+        padding: 50px 20px 25px 20px !important;
+        transform: .3s;
+    }
+    .right-side .photo {
+        width: 400px;
+        margin-top: 50px;
+        padding: auto !important;
+    }
+    .left-side {
+        padding: 30px !important;
+    }
+    .left-side h1 {
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+    .left-side .email input,
+    .password input {
+        width: 400px !important;
+        transition: .3s;
+        border-radius: 10px;
+        border: inherit;
+    }
+    form {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    form .button-login,
+    .button-creat-new-acc a,
+    .button-register {
+        width: 400px !important;
+        transition: .3s;
+    }
+    form .button-creat-new-acc a {
+        width: 250px !important;
+        transition: .3s;
+    }
+}
+
+@media (max-width:558px) {
+    main {
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .right-side {
+        display: none !important;
+        padding: 0 !important;
+        transition: .3s;
+    }
+    .left-side .logo-up-form {
+        display: block !important;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo-up-form-login {
+        width: 250px;
+    }
+    .left-side {
+        padding: 0 0 0 0 !important;
+        height: 100vh !important;
+        padding: 0 !important;
+        transition: .3s;
+    }
+    .left-side h1 {
+        text-align: center !important;
+        margin-bottom: 10px !important;
+    }
+    .left-side .email input,
+    .password input {
+        width: 300px !important;
+        transition: .3s;
+        border-radius: 10px;
+        border: inherit;
+    }
+    form {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    form .button-login,
+    .button-creat-new-acc a {
+        width: 300px !important;
+        transition: .3s;
+    }
+    form .button-creat-new-acc a {
+        width: 250px !important;
+        transition: .3s;
+    }
+    .left-side .email,
+    .password {
+        position: relative;
+        margin-bottom: 10px !important;
+    }
+    .left-side .photo-under-login {
+        display: block !important;
+    }
+    .button-register {
+        width: 300px !important;
+    }
+}
+
+.contain-of-login,
+.contain-of-register {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    background-color: var(--purple-900);
+}
+
+.right-side {
+    max-width: 500px;
+    background-color: var(--main-background);
+    height: 100vh;
+}
+
+.right-side .logo {
+    cursor: pointer;
+    padding: 100px 40px 50px 40px;
+}
+
+.right-side .photo {
+    padding: 40px 0 40px 40px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 0px 15% 0px 70px;
+}
+
+.left-side .photo-under-login {
+    margin-top: 10px;
+    display: none;
+    width: 262px;
+    display: flex;
+    justify-content: center;
+}
+
+.left-side .photo-under-login img {
+    width: 250px;
+}
+
+.left-side .logo-up-form {
+    display: none;
+}
+
+.left-side h1 {
+    margin-bottom: 50px;
+    color: var(--purple-100);
+    font-family: var(--font-inter);
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side .email label,
+.password label {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--purple-300);
+}
+
+.password label {
+    margin-top: 10px;
+}
+
+.left-side .email input,
+.password input,
+.name input {
+    width: 450px;
+    padding: 5px;
+    border-radius: 10px;
+    border: inherit;
+    box-shadow: 0px 10px 0px -8px var(--purple-600)
+}
+
+.left-side .email input::placeholder,
+.password input::placeholder {
+    margin-left: 50px !important;
+    padding-left: 25px;
+}
+
+.left-side .email,
+.password {
+    position: relative;
+}
+
+.left-side .email-icon,
+.lock-icon {
+    position: absolute;
+    bottom: 4px;
+    left: 2px;
+}
+
+form .button-login,
+.button-creat-new-acc a,
+.button-register {
+    background-color: var(--active);
+    color: var(--purple-100);
+    border: inherit;
+    width: 450px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form .button-login:hover,
+.button-creat-new-acc a:hover,
+.button-register:hover {
+    background-color: var(--purple-300);
+    color: var(--purple-900);
+}
+
+form .button-login a,
+.button-creat-new-acc a {
+    text-decoration: none;
+    color: var(--purple-100);
+    text-transform: capitalize;
+    font-family: var(--font-cabin);
+    font-weight: 400;
+    font-size: 22px;
+}
+
+form .forget-pass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 450px;
+}
+
+form .forget-pass a,
+.already-acc a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--purple-100);
+    text-transform: capitalize;
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+form .forget-pass a:hover,
+.already-acc a:hover {
+    color: var(--purple-300);
+}
+
+form .button-creat-new-acc {
+    width: 450px;
+    background-color: inherit;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .button-creat-new-acc a {
+    background-color: var(--purple-500);
+    width: 250px;
+}
+
+
+/*End login Design*/
+
+
+/*Start Register Design*/
+
+.already-acc {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book MY Doc</title>
+    <link rel="icon" href="../images/Logo.png">
+    <!--Css Files-->
+    <link rel="stylesheet" href="../css/login.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!--GooGle Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;700&family=Inter:wght@400;900&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <div class="contain-of-register">
+            <div class="right-side">
+                <a href="../../index.html">
+                    <img src="../images/Logo.png" alt="" class="logo">
+                </a>
+                <img src="../images/loginImage.png" alt="" class="photo">
+            </div>
+            <div class="left-side">
+                <a href="../../index.html">
+                    <img src="../images/Logo.png" alt="" class="logo-up-form ">
+                </a>
+                <h1>Please Register</h1>
+                <form action="">
+                    <div class="email">
+                        <label for="Email">Name:</label>
+                        <img src="../images/icons/user.svg" alt="" class="email-icon">
+                        <input type="email" id="email" placeholder="Enter Name">
+                    </div>
+                    <div class="email">
+                        <label for="Email">Email</label>
+                        <img src="../images/icons/email.svg" alt="" class="email-icon">
+                        <input type="email" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="password">
+                        <label for="Email">Password</label>
+                        <img src="../images/icons/lock.svg" alt="" class="lock-icon">
+                        <input type="password" id="password" placeholder="Enter password">
+                    </div>
+                    <button class="button-register">
+
+                            <span>Register</span>
+                    </button>
+                    <div class="already-acc" onclick="haveAccForRegisterPage(event)">
+                        <a href="">
+                            <span>Already have an account?</span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="../js/index.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
