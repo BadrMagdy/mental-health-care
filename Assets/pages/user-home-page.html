@@ -22,7 +22,7 @@
     <nav class="sidebar">
         <div class="logo-details">
             <img src="../images/Logo.png" alt="" class="logo-of-nav">
-            <img src="../images/icons/list-solid.svg" alt="" class="btn-list">
+            <img src="../images/icons/list-solid.svg" alt="" class="btn-list" onclick="showNav()">
         </div>
         <div class="menu-bar">
             <div class="menu">
@@ -68,7 +68,7 @@
                     <span class="toolti">setting</span>
                 </li>
 
-                <li class="nav-link" onclick="logout(event)">
+                <li class="nav-link" onclick="logoutOfUserHome(event)">
                     <a href="">
                         <img src="../images/icons/logout.png" alt="" class="icon">
                         <span class="text nav-text">logout</span>
@@ -161,8 +161,10 @@
             </div>
         </div>
     </section>
-    <script src="../js/dycalendar.js"></script>
+
+
     <script src="../js/index.js"></script>
+    <script src="../js/dycalendar.js"></script>
 
 </body>
 
