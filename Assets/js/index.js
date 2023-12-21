@@ -32,6 +32,18 @@ dycalendar.draw({
     prevnextbutton: 'show'
 })
 
+window.onload = function() {
+
+    const sidebar = document.querySelector(".sidebar");
+    const closBtn = document.querySelector(".btn-list");
+
+    closBtn.addEventListener("click", function() {
+        sidebar.classList.toggle("open")
+
+    })
+}
+
+
 function showNav() {
     event.preventDefault()
     const sidebar = document.querySelector(".sidebar");
@@ -43,4 +55,17 @@ function showNav() {
     })
 
 
+}
+
+
+function showNavbar() {
+    event.preventDefault()
+    let shownav = document.querySelector(".list-icon");
+    let navmenu = document.querySelector(".menu-links");
+
+    shownav.addEventListener("click", () => {
+        shownav.classList.toggle("show");
+        navmenu.classList.toggle("show");
+
+    })
 }
